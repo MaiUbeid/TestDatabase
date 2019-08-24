@@ -2,9 +2,9 @@ const express = require('express');
 
 const router = express.Router();
 
-const data = require('./cities');
+const {getData, postData} = require('./cities');
 
-router.use(express.urlencoded({ extended: false }));
-router.get('/cities', data.getData);
+router.get('/cities', getData);
+router.post('/addCity', postData);
 
 module.exports = router;
