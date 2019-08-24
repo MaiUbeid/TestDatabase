@@ -3,15 +3,16 @@ const { Pool } = require('pg');
 require('env2')('config.env');
 
 let dbURL = '';
-if(process.env.NODE_ENV == "production"){
+
+if (process.env.NODE_ENV === 'production') {
   dbURL = process.env.DATABASE_URL;
-} else{
-  dbURL = process.env.DB_URL;
+} else {
+  dbURL = process.env.DEV_DB_URL;
 }
 
 const options = {
   connectionString: dbURL,
-  ssl: true,
+  ssl: true
 };
 
 module.exports = new Pool(options);
