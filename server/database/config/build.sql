@@ -8,6 +8,6 @@ CREATE TABLE cities (
   city VARCHAR(70)
 );
 
-INSERT INTO cities (name, city) VALUES ('Mai', 'Gaza');
+INSERT INTO cities (name, city) VALUES ('Mai', 'Gaza'), ('Noor', 'Ramallah');
 
 COMMIT;
