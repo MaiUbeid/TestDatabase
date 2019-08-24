@@ -5,7 +5,7 @@ fetch("/cities")
     cities.forEach(c => {
       const row = document.createElement("tr");
       const name = document.createElement("td");
-      name.textContent = c.name;
+      name.textContent = c.user_name;
       row.appendChild(name);
       const city = document.createElement("td");
       city.textContent = c.city;
