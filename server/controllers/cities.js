@@ -8,7 +8,6 @@ exports.getData = (req, res) => {
 };
 
 exports.postData = (req, res) => {
-  console.log(req.body);
   const info = req.body;
   addCity(info)
     .then(() => res.redirect('/'))
