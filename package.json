@@ -19,7 +19,7 @@
   "homepage": "https://github.com/ali-7/week7-test#readme",
   "dependencies": {
     "env2": "^2.2.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "pg": "^7.12.1"
   },
   "devDependencies": {
